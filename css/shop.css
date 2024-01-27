@@ -367,7 +367,7 @@ button
     width: 100%;
     display: grid;
     padding: 50px 5%;
-    margin-top: 5%;
+    margin-top: 20px;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     overflow: hidden;
@@ -378,7 +378,20 @@ button
     width: 100%;
     float: left;
     height: 100%;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  
+    animation: slide 5s linear infinite;
    
+}
+
+@keyframes slide{
+  0%{
+    transform:translateX(30px);
+  }
+  100%{
+    transform:translatex(-30px);
+  }
 }
 
 #blog-container h2
@@ -404,4 +417,16 @@ button
 {
   height: 350px;
   width: 300px;
+}
+.members p {
+  margin: 0PX 5PX;
+  padding: 0PX 5PX;
+}
+.members a {
+  margin: 0PX 5PX;
+  padding: 0PX 5PX;
+}
+.team {
+  text-align: center;
+  margin-top: 90px;
 }
